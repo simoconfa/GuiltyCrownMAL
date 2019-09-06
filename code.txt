@@ -13,7 +13,7 @@
 	display: block;
 	content: '';
 	margin-left: -366px;
-	margin-top: -320px;
+	margin-top: -270px;
 	width: 230px;
 	height: 230px;
 	border: solid 1px #0c100d;
@@ -29,7 +29,7 @@
 	display: block;
 	content: '';
 	margin-left: -356px;
-	margin-top: -288px;
+	margin-top: -235px;
 	width: 180px;
 	height: 158px;
 	background: url(http://i.imgur.com/14W9Hdy.png);
@@ -115,34 +115,13 @@
 
 /*All */
 .status_selected a[href*="status=7"], .status_not_selected a[href*="status=7"] { display: none; }
-.animetitle[href$="/Kimi_ni_Todoke"] span:after, 
-.animetitle[href$="/Kimi_ni_Todoke_2nd_Season"] span:after, 
-.animetitle[href$="/Candy_Candy"] span:after, 
+.animetitle[href$="/No_Game_No_Life"] span:after, 
 .animetitle[href$="/Blood+"] span:after, 
-.animetitle[href$="/Kimi_ga_Nozomu_Eien"] span:after, 
-.animetitle[href$="/Shingetsutan_Tsukihime"] span:after, 
-.animetitle[href$="/Saikano"] span:after, 
-.animetitle[href$="/Amagami_SS"] span:after, 
 .animetitle[href$="/Amagami_SS+_Plus"] span:after,
-.animetitle[href$="/Sekirei"] span:after, 
 .animetitle[href$="/Sekirei:_Pure_Engagement"] span:after, 
 .animetitle[href$="/Mirai_Nikki_(TV)"] span:after,
-.animetitle[href$="/Nisemonogatari"] span:after,
-.animetitle[href$="/Nyan_Koi!"] span:after,
-.animetitle[href$="/Gosick"] span:after,
-.animetitle[href$="/Kokoro_Connect"] span:after,
 .animetitle[href$="/Kokoro_Connect:_Michi_Random"] span:after,
-.animetitle[href$="/Peach_Girl"] span:after,
 .animetitle[href$="/Kanon_(2006)"] span:after,
-.animetitle[href$="/sola"] span:after,
-.animetitle[href$="/Toaru_Majutsu_no_Index"] span:after,
-.animetitle[href$="/Toaru_Majutsu_no_Index_II"] span:after,
-.animetitle[href$="/Motto_To_LOVE-Ru"] span:after,
-.animetitle[href$="/Sankarea"] span:after,
-.animetitle[href$="/Kurokami"] span:after,
-.animetitle[href$="/Suzuka"] span:after, 
-.animetitle[href$="/Kekkaishi"] span:after,
-.animetitle[href$="/Nagasarete_Airantou"] span:after,
 .animetitle[href$="/Sukitte_Ii_na_yo."] span:after { 
 	pointer-events: none;
 	position: absolute;
@@ -525,6 +504,7 @@ a { text-decoration: none; }
 	line-height: 24px !important;
 	font-size: 16px;
 	padding-left: 18px;
+	max-width: 287px;
 }
 
 .animetitle + small { display: none; }
