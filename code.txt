@@ -655,10 +655,11 @@ tr:hover > .td1, tr:hover > .td2, tr:hover > .td1 a, tr:hover > .td2 a { color: 
 margin-left:-41px;	
 } 
 
-.table_headerLink strong, .table_headerLink[href*="order=4"], .table_header a[href$="order=9"], .table_header a[href$="order=12"] { visibility: hidden; font-weight: normal; letter-spacing: -12px; }
+/* Hide default text */
+.table_headerLink strong, .table_headerLink[href*="order=4"], .table_header a[href$="order=9"], .table_headerLink[href*="order=12"] { visibility: hidden; font-weight: normal; letter-spacing: -12px; }
 
 /* T circle + other not working circles */
- .table_headerLink strong:before, .table_header a[href$="order=9"]:before, .table_header a[href$="order=12"]:before { 
+ .table_headerLink strong:before { 
 	visibility: visible;
 	position: fixed;
 	display: block;
@@ -673,7 +674,6 @@ margin-left: -48px;
 	border-radius: 10em;
 	letter-spacing: 0 !important;  
 }
-
  
 /* S circle */
   .table_headerLink[href*="order=4"]:after { 
@@ -691,18 +691,59 @@ margin-left: -25px;
 	border-radius: 10em;
 	letter-spacing: 0 !important;
   } 
+  
+  /* Y circle (to fix)*/
+  .table_headerLink[href*="order=9"]:after { 
+    visibility: visible;
+  	position: fixed;
+	display: block;
+	width: 48px;
+	height: 48px;
+margin-top: -48px;
+margin-left: -30px;
+	color: #b8bbe4;
+	text-align: center;
+	border: solid 2px #b8bbe4;
+	background-color: rgba(79, 64, 131, .6);
+	border-radius: 10em;
+	letter-spacing: 0 !important;
+  } 
+  
+  /* E circle */
+  .table_headerLink[href*="order=12"]:after {
+    visibility: visible;
+  	position: fixed;
+	display: block;
+	width: 48px;
+	height: 48px;
+margin-top: -48px;
+margin-left: -30px;
+	color: #b8bbe4;
+	text-align: center;
+	border: solid 2px #b8bbe4;
+	background-color: rgba(79, 64, 131, .6);
+	border-radius: 10em;
+	letter-spacing: 0 !important;
+  }
 
+/* MouseOver event */
+.table_headerLink strong:hover:before,  .table_headerLink[href*="order=4"]:hover:after, .table_headerLink[href*="order=9"]:hover:after, .table_headerLink[href*="order=12"]:hover:after { color: #FFFFFF; border-color: #FFFFFF; }
 
-.table_headerLink strong:hover:before,  .table_headerLink[href*="order=4"]:hover:after, .table_header a[href$="order=9"]:hover:before, .table_header a[href$="order=12"]:hover:before { color: #FFFFFF; border-color: #FFFFFF; }
-
+/* Order by TAG */
 .table_headerLink strong:before { content: 'T';  }
-
+/* Order by SCORE */
 .table_headerLink[href*="order=4"]:after { content: 'S'; }
-
-.table_header a[href$="order=9"]:before, .table_header a[href$="order=12"]:before { content: 'P'; }
+/* Order by PRODUCTION YEAR (to fix) */
+.table_headerLink[href*="order=9"]:after { content: 'Y'} 
+/* Order by NUMBER of EPISODES */
+.table_headerLink[href*="order=12"]:after { content: 'E'; }
 
 .table_header:first-of-type { right: 931px; top: 285px; }
 
 .table_header:nth-of-type(2) { right: 778px; top: 152px; }
 
 .table_header:nth-of-type(3) { right: 541px; top: 286px; }
+
+.table_header:nth-of-type(4) { right: 931px; top: 285px; }
+
+.table_header:nth-of-type(5) { right: 559px; top: 199px; }
