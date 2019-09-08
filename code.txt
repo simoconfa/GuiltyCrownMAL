@@ -738,6 +738,31 @@ margin-left: -30px;
 /* MouseOver event */
 .table_headerLink strong:hover:before,  .table_headerLink[href*="order=4"]:hover:before, .table_headerLink[href*="order=6"]:hover:before, .table_headerLink[href*="order=12"]:hover:before { color: #FFFFFF; border-color: #FFFFFF; }
 
+/*start beta code */
+/*pre anim*/
+#list_surround table:nth-of-type(3) a:after { 
+	visibility: hidden;
+	position: fixed;
+	display: block;
+	content: '';
+	margin-left: -366px;
+	margin-top: -270px;
+	width: 230px;
+	height: 230px;
+	border: solid 1px #0c100d;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: inset 0 0 2px #FFFFFF, inset 0 0 12px rgba(63, 65, 64, 1), inset 0 0 24px rgba(145, 145, 145, 1);
+	border-radius: 50em;
+}
+
+/* Circle animation mouseOver */
+#list_surround table:nth-of-type(3) a:hover:after { 
+	visibility: visible;
+	animation: ShrinkVertEmblem linear 1.5s;
+        -webkit-animation: ShrinkVertEmblem linear 1.5s;
+}
+/*end beta code*/
+
 /* Order by ALPHABET */
 .table_headerLink strong:before { content: 'A'; }
 /* Order by SCORE */
