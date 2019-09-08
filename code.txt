@@ -1,6 +1,8 @@
 /*
 
 TODO: RAGGRUPPARE CODICE DUPLICATO
+TODO: AGGIUNGERE HOME
+TODO: AGGIUNGERE COPRI PREVIEW "GC"
 
 HOW TO USE
 Use and COMPLETE this simple tutorial if you never installed CSS, it only takes a few minutes:
@@ -748,12 +750,12 @@ margin-left: -30px;
 	visibility: hidden;
 	position: fixed;
 	display: block;
-	content: '';
 	margin-left: -88px;
 	margin-top: 34px;
 	content: 'Order by Alphabet';
+	font-size: x-large;
 	text-align: center;
-	line-height: 19;
+	line-height: 9;
 	width: 230px;
 	height: 230px;
 	border: solid 1px #0c100d;
@@ -766,12 +768,12 @@ margin-left: -30px;
 	visibility: hidden;
 	position: fixed;
 	display: block;
-	content: '';
 	margin-left: -280px;
 	margin-top: -100px;
 	content: 'Order by Score';
+	font-size: x-large;
 	text-align: center;
-	line-height: 19;
+	line-height: 9;
 	width: 230px;
 	height: 230px;
 	border: solid 1px #0c100d;
@@ -784,12 +786,12 @@ margin-left: -30px;
 	visibility: hidden;
 	position: fixed;
 	display: block;
-	content: '';
 	margin-left: -174px;
 	margin-top: 28px;
 	content: 'Order by Type';
+	font-size: x-large;
 	text-align: center;
-	line-height: 19;
+	line-height: 9;
 	width: 230px;
 	height: 230px;
 	border: solid 1px #0c100d;
@@ -802,12 +804,12 @@ margin-left: -30px;
 	visibility: hidden;
 	position: fixed;
 	display: block;
-	content: '';
 	margin-left: -237px;
 	margin-top: -13px;
 	content: 'Order by Episodes';
+	font-size: x-large;
 	text-align: center;
-	line-height: 19;
+	line-height: 9;
 	width: 230px;
 	height: 230px;
 	border: solid 1px #0c100d;
