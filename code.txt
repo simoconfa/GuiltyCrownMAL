@@ -7,6 +7,7 @@
 	z-index: 15;
 }
 
+/* White circle of cw, completed, onhold, ptw */
 #list_surround table:first-of-type:before { 
 	visibility: hidden;
 	position: fixed;
@@ -22,6 +23,7 @@
 	border-radius: 50em;
 }
 
+/* White circle of cw, completed, onhold, ptw */
 #list_surround table:first-of-type:after { 
 	opacity: 0;
 	visibility: hidden;
@@ -36,13 +38,15 @@
 	z-index: 2; 
 }
 
+/* Animations of white circle */
 #list_surround table:first-of-type:hover:before {  
 	visibility: visible;
 	animation: ShrinkVert linear 1.5s;
         -webkit-animation: ShrinkVert linear 1.5s;
 }
 
-#list_surround table:first-of-type:hover:after {  
+ /* Animations of white circle */
+#list_surround table:first-of-type:hover:after { 
 	visibility: visible;
 	animation: ShrinkVertEmblem linear 1.5s;
         -webkit-animation: ShrinkVertEmblem linear 1.5s;
