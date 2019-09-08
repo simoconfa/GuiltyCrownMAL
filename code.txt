@@ -1,4 +1,40 @@
+/*
+HOW TO USE
+Use and COMPLETE this simple tutorial if you never installed CSS, it only takes a few minutes:
+http://myanimelist.net/forum/?topicid=200320
+
+
+When you're done with the tutorial and can see the starter layout on your list, copy and paste this entire page of codes (including this part and the codes above and below) 
+to your CSS edit box (the box titled Edit Advanced CSS File) replacing any other codes in the box. 
+Save with the blue button at the bottom. It will put this premade layout on your list instead of the starter one from the tutorial! 
+
+
+If the layout looks weird on your list after installing, you can try to alter your settings here.
+Common solutions are to set Default Status Settings to Watching or All Anime, check or uncheck tags (make sure you save afterwards):
+http://myanimelist.net/editprofile.php?go=listpreferences
+
+
+If your list still has problems you can ask us about it here, or other questions:
+http://myanimelist.net/forum/?topicid=200323
+
+
+And you'll find further ways to customize your list here:
+http://myanimelist.net/forum/?topicid=419405
+*/
+/* Not working imports (offline links), so they are disabled for performance */ /*
+	@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Guilty%20Crown/ShrinkVert.css);
+	@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Guilty%20Crown/ShrinkVertEmblem.css);
+	@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Guilty%20Crown/ShortShrinkVert.css);
+	@import url(https://dl.dropbox.com/u/78192465/MyAnimeList/Guilty%20Crown/TabContent.css);
+	@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/CSS/TopMenu/TopMenu.css);
+	@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/CSS/TopMenu/UnFixed.css);
+	@import url(https://dl.dropbox.com/u/78192465/MyAnimeList/CSS/TopMenu/Colors/Violet.css);
+	@import url(https://dl.dropbox.com/u/78192465/MyAnimeList/Guilty%20Crown/CategoryMenu.css);
+	@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/covers_more.css);
+*/
+
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/more";
+@\import "http://fonts.googleapis.com/css?family=Electrolize";
 
 #list_surround table:first-of-type {
 	position: absolute !important;
@@ -141,6 +177,8 @@
 	-moz-border-radius: 1em;
  	-webkit-border-radius: 1em;
 }
+
+/* Circle animation stuff */
 @keyframes ShortShrinkVert
 {
 	0% { transform: scale(1, 1); }   
@@ -350,40 +388,7 @@
 	-moz-animation-name: ShrinkVertEmblem;
 	-webkit-animation-name: ShrinkVertEmblem;
 }
-@import url(http://fonts.googleapis.com/css?family=Electrolize);
-@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Guilty%20Crown/ShrinkVert.css);
-@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Guilty%20Crown/ShrinkVertEmblem.css);
-@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Guilty%20Crown/ShortShrinkVert.css);
-@import url(https://dl.dropbox.com/u/78192465/MyAnimeList/Guilty%20Crown/TabContent.css);
-@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/CSS/TopMenu/TopMenu.css);
-@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/CSS/TopMenu/UnFixed.css);
-@import url(https://dl.dropbox.com/u/78192465/MyAnimeList/CSS/TopMenu/Colors/Violet.css);
-@import url(https://dl.dropbox.com/u/78192465/MyAnimeList/Guilty%20Crown/CategoryMenu.css);
-@import url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/covers_more.css);
 
-/*
-HOW TO USE
-Use and COMPLETE this simple tutorial if you never installed CSS, it only takes a few minutes:
-http://myanimelist.net/forum/?topicid=200320
-
-
-When you're done with the tutorial and can see the starter layout on your list, copy and paste this entire page of codes (including this part and the codes above and below) 
-to your CSS edit box (the box titled Edit Advanced CSS File) replacing any other codes in the box. 
-Save with the blue button at the bottom. It will put this premade layout on your list instead of the starter one from the tutorial! 
-
-
-If the layout looks weird on your list after installing, you can try to alter your settings here.
-Common solutions are to set Default Status Settings to Watching or All Anime, check or uncheck tags (make sure you save afterwards):
-http://myanimelist.net/editprofile.php?go=listpreferences
-
-
-If your list still has problems you can ask us about it here, or other questions:
-http://myanimelist.net/forum/?topicid=200323
-
-
-And you'll find further ways to customize your list here:
-http://myanimelist.net/forum/?topicid=419405
-*/
 
 * { cursor: url(http://i.imgur.com/FCnd9vD.png) 1 1, auto; }
 
@@ -739,7 +744,7 @@ margin-left: -30px;
 .table_headerLink[href*="order=4"]:after { content: 'S'; }
 /* Order by TYPE */
 .table_headerLink[href*="order=6"]:after { content: 'T'; } 
-/* Order by NUMBER of EPISODES */
+/* Order by Number of EPISODES */
 .table_headerLink[href*="order=12"]:after { content: 'E'; }
 
 .table_header:first-of-type { right: 931px; top: 285px; }
