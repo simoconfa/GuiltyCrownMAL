@@ -746,7 +746,7 @@ margin-left: -30px;
 /*start beta code */
 
 /* pre animation of white circle of A,T,E,S */
-.table_header:nth-of-type(2):after, .table_header:nth-of-type(3):after, .table_header:nth-of-type(4):after, .table_header:nth-of-type(5):after {
+.table_header:nth-of-type(2):before, .table_header:nth-of-type(3):before, .table_header:nth-of-type(4):before, .table_header:nth-of-type(5):before {
 visibility: hidden;
 	position: fixed;
 	display: block;
@@ -761,31 +761,74 @@ visibility: hidden;
 	border-radius: 50em;
 }
 /* white circle position */
+.table_header:nth-of-type(2):before { 	
+	margin-left: -88px;
+	margin-top: 82px;
+	content: 'Order by Alphabet';
+}
+/* white circle position */
+.table_header:nth-of-type(3):before { 	
+	margin-left: -280px;
+	margin-top: -52px; 
+	content: 'Order by Score';	
+}
+/* white circle position */
+.table_header:nth-of-type(4):before { 
+	margin-left: -174px;
+	margin-top: 76px;
+	content: 'Order by Type';
+}
+/* white circle position */
+.table_header:nth-of-type(5):before { 
+	margin-left: -237px;
+	margin-top: 35px;
+	content: 'Order by Episodes';	
+}
+
+/* pre animation of GC logo of A,T,E,S */
+.table_header:nth-of-type(2):after, .table_header:nth-of-type(3):after, .table_header:nth-of-type(4):after, .table_header:nth-of-type(5):after {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	display: block;
+	content: '';
+	margin-left: -280px;
+	margin-top: -100px;
+	width: 180px;
+	height: 158px;
+	background: url(http://i.imgur.com/14W9Hdy.png);
+	z-index: 2;  /* allow to cover white circle */ 
+}
+
+/* white circle position */
 .table_header:nth-of-type(2):after { 	
 	margin-left: -88px;
-	margin-top: 34px;
-	content: 'Order by Alphabet';
+	margin-top: 82px;
 }
 /* white circle position */
 .table_header:nth-of-type(3):after { 	
 	margin-left: -280px;
-	margin-top: -100px;
-	content: 'Order by Score';	
+	margin-top: -52px; 
 }
 /* white circle position */
 .table_header:nth-of-type(4):after { 
 	margin-left: -174px;
-	margin-top: 28px;
-	content: 'Order by Type';
+	margin-top: 76px;
 }
 /* white circle position */
 .table_header:nth-of-type(5):after { 
 	margin-left: -237px;
-	margin-top: -13px;
-	content: 'Order by Episodes';	
+	margin-top: 35px;	
 }
 
-/* trigger circle animation when mouseOver */
+/* trigger white circle animation when mouseOver */
+.table_header:nth-of-type(2):hover:before, .table_header:nth-of-type(3):hover:before, .table_header:nth-of-type(4):hover:before, .table_header:nth-of-type(5):hover:before { 
+	visibility: visible;
+	animation: ShrinkVertEmblem linear 1.5s;
+        -webkit-animation: ShrinkVert linear 1.5s;
+}
+
+ /* Animations of GC logo circle when mouseOver */
 .table_header:nth-of-type(2):hover:after, .table_header:nth-of-type(3):hover:after, .table_header:nth-of-type(4):hover:after, .table_header:nth-of-type(5):hover:after { 
 	visibility: visible;
 	animation: ShrinkVertEmblem linear 1.5s;
