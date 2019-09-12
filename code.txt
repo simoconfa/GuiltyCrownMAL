@@ -183,7 +183,7 @@ http://myanimelist.net/forum/?topicid=419405
  	-webkit-border-radius: 1em;
 }
 
-/* Circle animation stuff */
+/* Circle animation of anime */
 @keyframes ShortShrinkVert
 {
 	0% { transform: scale(1, 1); }   
@@ -237,6 +237,7 @@ http://myanimelist.net/forum/?topicid=419405
 	-moz-animation-name: ShortShrinkVert;
 	-webkit-animation-name: ShortShrinkVert;
 }
+/* Circle animation of filtering */
 @keyframes ShrinkVert
 {
 	0% { transform: scale(1, 1); }   
@@ -315,6 +316,7 @@ http://myanimelist.net/forum/?topicid=419405
 	-moz-animation-name: ShrinkVert;
 	-webkit-animation-name: ShrinkVert;
 }
+/* GC Emblem animation */
 @keyframes ShrinkVertEmblem
 {
 	0% { transform: scale(1, 1); }   
@@ -785,7 +787,15 @@ visibility: hidden;
 	content: 'Order by Episodes';	
 }
 
-/* pre animation of GC logo of A,T,E,S */
+/* trigger white circle animation when mouseOver */
+.table_header:nth-of-type(2):hover:before, .table_header:nth-of-type(3):hover:before, .table_header:nth-of-type(4):hover:before, .table_header:nth-of-type(5):hover:before { 
+	visibility: visible;
+	animation: ShrinkVertEmblem linear 1.5s;
+        -webkit-animation: ShrinkVert linear 1.5s;
+}
+
+/* NOT CORRECTLY WORKING CODE
+pre animation of GC logo of A,T,E,S 
 .table_header:nth-of-type(2):after, .table_header:nth-of-type(3):after, .table_header:nth-of-type(4):after, .table_header:nth-of-type(5):after {
 	opacity: 0;
 	visibility: hidden;
@@ -795,45 +805,36 @@ visibility: hidden;
 	width: 180px;
 	height: 158px;
 	background: url(http://i.imgur.com/14W9Hdy.png);
-	z-index: 2;  /* allow to cover white circle */ 
+	z-index: 2;  /* allow to cover white circle 
 }
-
-/* white circle position */
+/* white circle position 
 .table_header:nth-of-type(2):after { 	
 	margin-left: -80px;
 	margin-top: 74px;
 }
-/* white circle position */
+ white circle position 
 .table_header:nth-of-type(3):after { 	
 	margin-left: -272px;
 	margin-top: -60px; 
 }
-/* white circle position */
+ white circle position 
 .table_header:nth-of-type(4):after { 
 	margin-left: -162px;
 	margin-top: 68px;
 }
-/* white circle position */
+ white circle position 
 .table_header:nth-of-type(5):after { 
 	margin-left: -221px;
 	margin-top: 27px;	
 }
-
-/* trigger white circle animation when mouseOver */
-.table_header:nth-of-type(2):hover:before, .table_header:nth-of-type(3):hover:before, .table_header:nth-of-type(4):hover:before, .table_header:nth-of-type(5):hover:before { 
-	visibility: visible;
-	animation: ShrinkVertEmblem linear 1.5s;
-        -webkit-animation: ShrinkVert linear 1.5s;
-}
-
- /* Animations of GC logo circle when mouseOver */
+  Animations of GC logo circle when mouseOver 
 .table_header:nth-of-type(2):hover:after, .table_header:nth-of-type(3):hover:after, .table_header:nth-of-type(4):hover:after, .table_header:nth-of-type(5):hover:after { 
 	visibility: visible;
 	animation: ShrinkVertEmblem linear 1.5s;
         -webkit-animation: ShrinkVertEmblem linear 1.5s;
 }
-/*end beta code*/
-
+ */
+ 
 /* Order by ALPHABET */
 .table_headerLink strong:before { content: 'A'; }
 /* Order by SCORE */
