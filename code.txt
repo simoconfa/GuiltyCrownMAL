@@ -800,23 +800,23 @@ visibility: hidden;
 
 /* white circle position */
 .table_header:nth-of-type(2):after { 	
-	margin-left: -88px;
-	margin-top: 82px;
+	margin-left: -80px;
+	margin-top: 74px;
 }
 /* white circle position */
 .table_header:nth-of-type(3):after { 	
-	margin-left: -280px;
-	margin-top: -52px; 
+	margin-left: -272px;
+	margin-top: -60px; 
 }
 /* white circle position */
 .table_header:nth-of-type(4):after { 
-	margin-left: -174px;
-	margin-top: 76px;
+	margin-left: -162px;
+	margin-top: 68px;
 }
 /* white circle position */
 .table_header:nth-of-type(5):after { 
-	margin-left: -237px;
-	margin-top: 35px;	
+	margin-left: -221px;
+	margin-top: 27px;	
 }
 
 /* trigger white circle animation when mouseOver */
