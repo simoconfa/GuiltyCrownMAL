@@ -40,6 +40,7 @@ http://myanimelist.net/forum/?topicid=419405
 
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/more";
 @\import "https://fonts.googleapis.com/css?family=Electrolize";
+@\import "https://dl.dropboxusercontent.com/s/ilgjrutef4suve9/menu_bar.css";
 
 #list_surround table:first-of-type {
 	position: absolute !important;
@@ -790,8 +791,8 @@ visibility: hidden;
 /* trigger white circle animation when mouseOver */
 .table_header:nth-of-type(2):hover:before, .table_header:nth-of-type(3):hover:before, .table_header:nth-of-type(4):hover:before, .table_header:nth-of-type(5):hover:before { 
 	visibility: visible;
-	animation: ShrinkVertEmblem linear 1.5s;
-        -webkit-animation: ShrinkVert linear 1.5s;
+	animation: ShortShrinkVert linear 0.5s;
+        -webkit-animation: ShortShrinkVert linear 0.5s; 
 }
 
 /* NOT CORRECTLY WORKING CODE
